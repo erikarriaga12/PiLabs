@@ -25,9 +25,12 @@ import java.util.Arrays;
 
 public class Indexer {
     public static final Version LUCENE_CURRENT = Version.LUCENE_6_5_1;
-    public static final String INDEX_DIRECTORY = "C:\\Users\\maro8\\Desktop\\tmp";
-    public static final String DATA_BUCKET =
-            "C:\\Users\\maro8\\Desktop\\Work\\data\\bucket";
+    public static final String INDEX_DIRECTORY = ; //Add path here
+
+//"C:\\Users\\maro8\\Desktop\\tmp";
+//
+    public static final String DATA_BUCKET = ;//Add path here
+           // "C:\\Users\\maro8\\Desktop\\Work\\data\\bucket";
 
     private static Document getDocument(File file) throws IOException {
         Field filename = new StringField("path", file.getAbsolutePath(), Field.Store.YES);

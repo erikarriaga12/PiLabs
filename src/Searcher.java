@@ -25,7 +25,9 @@ import java.nio.file.Paths;
  * Created by plependu on 5/11/17.
  */
 public class Searcher {
-    public static final String INDEX_DIRECTORY = "C:\\Users\\maro8\\Desktop\\tmp";
+    public static final String INDEX_DIRECTORY = ;//<-- add path
+
+	//example: "C:\\Users\\maro8\\Desktop\\tmp";
 
     public static void main(String[] args) throws IOException, ParseException, InvalidTokenOffsetsException {
         IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(INDEX_DIRECTORY)));
